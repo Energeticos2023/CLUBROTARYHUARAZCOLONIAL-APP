@@ -6,17 +6,16 @@ const DIRECTIVA = [
     "nombre": "Gabriela Georgina Norabuena Jácome",
     "celular": "999106856",
     "foto": "foto_d",
-    "resena": "Socia comprometida con la organización interna del club, orientada al orden, la coordinación y el seguimiento oportuno de las acciones de la directiva. Su rol fortalece la gestión institucional y facilita que los acuerdos se ejecuten con claridad.",
+    "resena": "Socia comprometida con la organización interna del club, orientada al orden, la coordinación y el seguimiento oportuno de las acciones de la directiva.",
     "funciones": [
       "Organizar y dar seguimiento a los acuerdos de la directiva.",
       "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Apoyar la comunicación interna y la gestión institucional."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Fortalecer la coordinación interna.",
+      "Mejorar el seguimiento de acuerdos.",
+      "Ordenar la documentación del club."
     ]
   },
   {
@@ -26,17 +25,16 @@ const DIRECTIVA = [
     "nombre": "Esther Marilú Artola Angeles",
     "celular": "943842709",
     "foto": "foto_f",
-    "resena": "Representa el compromiso solidario del club con la Fundación Rotaria, promoviendo una cultura de servicio, contribución y conocimiento de los programas que permiten ampliar el impacto de Rotary en la comunidad.",
+    "resena": "Representa el compromiso solidario del club con la Fundación Rotaria, promoviendo una cultura de servicio y contribución responsable.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Promover el conocimiento de la Fundación Rotaria.",
+      "Impulsar actividades vinculadas a la Fundación.",
+      "Informar avances a la directiva."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Difundir los programas de la Fundación.",
+      "Incrementar la participación de socios.",
+      "Fortalecer la cultura de servicio."
     ]
   },
   {
@@ -46,17 +44,16 @@ const DIRECTIVA = [
     "nombre": "Juan Martín Dongo Adrián",
     "celular": "943495934",
     "foto": "foto_a",
-    "resena": "Impulsa la formación rotaria y el aprendizaje continuo, promoviendo que los socios conozcan mejor la organización, sus valores y sus responsabilidades.",
+    "resena": "Impulsa la formación rotaria y el aprendizaje continuo, promoviendo liderazgo y sentido de pertenencia.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Organizar espacios de capacitación.",
+      "Acompañar a socios nuevos.",
+      "Promover el aprendizaje rotario."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Desarrollar un calendario de formación.",
+      "Mejorar la participación en capacitaciones.",
+      "Fortalecer el liderazgo."
     ]
   },
   {
@@ -66,17 +63,16 @@ const DIRECTIVA = [
     "nombre": "Zoila Mercedes Robles Romero",
     "celular": "973801630",
     "foto": "foto_m",
-    "resena": "Lidera el fortalecimiento de la membresía, promoviendo la integración, permanencia y crecimiento ordenado del club.",
+    "resena": "Lidera el fortalecimiento de la membresía, promoviendo integración, permanencia y crecimiento del club.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Promover nuevos socios.",
+      "Dar seguimiento a la participación.",
+      "Coordinar acciones de compañerismo."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Incrementar la membresía activa.",
+      "Mejorar la asistencia.",
+      "Fortalecer la integración."
     ]
   },
   {
@@ -86,17 +82,16 @@ const DIRECTIVA = [
     "nombre": "José Rafael Zeña Peche",
     "celular": "942899919",
     "foto": "foto_p",
-    "resena": "Socio comprometido con el servicio, la unidad y el liderazgo institucional. Promueve la articulación entre la directiva y los socios para impulsar proyectos con impacto positivo en la comunidad.",
+    "resena": "Lidera la gestión institucional del Club Rotary Huaraz Colonial, impulsando unidad, servicio y liderazgo con impacto comunitario.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Representar al club.",
+      "Dirigir reuniones y gestión anual.",
+      "Supervisar comités y proyectos."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Consolidar una directiva activa.",
+      "Impulsar proyectos de alto impacto.",
+      "Fortalecer imagen pública y participación."
     ]
   },
   {
@@ -106,17 +101,16 @@ const DIRECTIVA = [
     "nombre": "Lourdes Mirta Foronda Valverde",
     "celular": "997542857",
     "foto": "foto_i",
-    "resena": "Conduce la comunicación institucional y la proyección pública del club, procurando que cada actividad refleje los valores rotarios y el impacto de sus acciones de servicio.",
+    "resena": "Conduce la comunicación institucional y la proyección pública del club, fortaleciendo su presencia en la comunidad.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Difundir actividades del club.",
+      "Cuidar la imagen institucional.",
+      "Coordinar publicaciones y medios."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Mantener presencia digital activa.",
+      "Difundir actividades oportunamente.",
+      "Posicionar al club en Huaraz."
     ]
   },
   {
@@ -126,17 +120,16 @@ const DIRECTIVA = [
     "nombre": "Jacqueline Jacqueline Gladys Cruz Menacho",
     "celular": "940846802",
     "foto": "foto_sec",
-    "resena": "Responsable de la gestión formal de la documentación, comunicaciones y registros del club.",
+    "resena": "Gestiona la documentación, las comunicaciones y los registros del club con orden y responsabilidad.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Custodiar actas y comunicaciones.",
+      "Llevar registro de socios y asistencia.",
+      "Coordinar convocatorias."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Mantener registros actualizados.",
+      "Mejorar el control de asistencia.",
+      "Optimizar comunicaciones internas."
     ]
   },
   {
@@ -146,17 +139,16 @@ const DIRECTIVA = [
     "nombre": "Luis Nicolas Fernando Mendez La Torre",
     "celular": "943284330",
     "foto": "foto_proy",
-    "resena": "Lidera la formulación, coordinación y seguimiento de proyectos de servicio, orientando los esfuerzos del club hacia intervenciones útiles y sostenibles.",
+    "resena": "Lidera la formulación, coordinación y seguimiento de proyectos de servicio con impacto comunitario.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Identificar necesidades comunitarias.",
+      "Planificar y evaluar proyectos.",
+      "Articular alianzas y socios."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Ejecutar proyectos con impacto medible.",
+      "Fortalecer alianzas.",
+      "Registrar resultados."
     ]
   },
   {
@@ -166,17 +158,16 @@ const DIRECTIVA = [
     "nombre": "Susam Diana Meza Guerrero",
     "celular": "946678611",
     "foto": "foto_t",
-    "resena": "Administra con responsabilidad los recursos económicos del club, promoviendo transparencia, orden financiero y sostenibilidad.",
+    "resena": "Administra responsablemente los recursos económicos del club, promoviendo transparencia y sostenibilidad financiera.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Controlar ingresos y egresos.",
+      "Informar la situación financiera.",
+      "Coordinar pagos y presupuestos."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Mantener registros verificables.",
+      "Presentar reportes periódicos.",
+      "Apoyar la sostenibilidad financiera."
     ]
   },
   {
@@ -186,17 +177,16 @@ const DIRECTIVA = [
     "nombre": "Orializ Gladis Milla Pajuelo",
     "celular": "943641227",
     "foto": "foto_v",
-    "resena": "Acompaña la conducción institucional del club y brinda soporte estratégico a la presidencia y directiva.",
+    "resena": "Brinda soporte estratégico a la presidencia y contribuye a la continuidad de la gestión del club.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Apoyar la coordinación general.",
+      "Asumir encargos institucionales.",
+      "Dar soporte a actividades prioritarias."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Fortalecer la continuidad de gestión.",
+      "Apoyar el cumplimiento de acuerdos.",
+      "Contribuir a una directiva cohesionada."
     ]
   },
   {
@@ -206,20 +196,20 @@ const DIRECTIVA = [
     "nombre": "Leezzing Ghinneers Guimaray Gonzalez",
     "celular": "943751542",
     "foto": "foto_l",
-    "resena": "Promueve la participación de jóvenes líderes en programas vinculados a Rotary, fortaleciendo el liderazgo, el servicio y la conexión intergeneracional.",
+    "resena": "Promueve la participación de jóvenes líderes y el vínculo entre Rotary y las nuevas generaciones.",
     "funciones": [
-      "Organizar y dar seguimiento a los acuerdos de la directiva.",
-      "Coordinar la información y documentación del club.",
-      "Apoyar la comunicación interna y la gestión institucional.",
-      "Velar por el cumplimiento de funciones y plazos."
+      "Coordinar iniciativas juveniles.",
+      "Promover participación joven.",
+      "Difundir oportunidades de liderazgo."
     ],
     "metas": [
-      "Fortalecer la participación activa de los socios.",
-      "Impulsar una gestión ordenada y con trazabilidad.",
-      "Contribuir al cumplimiento de las metas del Año Rotario 2026–2027."
+      "Impulsar la participación juvenil.",
+      "Fortalecer actividades de liderazgo.",
+      "Crear puentes con nuevos líderes."
     ]
   }
 ];
+
 const REUNIONES = [
   {
     "titulo": "Reunión semanal",
@@ -229,27 +219,30 @@ const REUNIONES = [
     "lugar": "Salón principal - Huaraz"
   },
   {
-    "titulo": "Comité de proyectos",
+    "titulo": "Comité de Proyectos",
     "descripcion": "Planificación y seguimiento de proyectos",
     "dia": "Martes",
     "hora": "8:00 p. m.",
     "lugar": "Oficina de Proyectos"
   },
   {
-    "titulo": "Imagen pública",
-    "descripcion": "Estrategias de comunicación",
+    "titulo": "Imagen Pública",
+    "descripcion": "Estrategia de comunicación institucional",
     "dia": "Jueves",
     "hora": "7:00 p. m.",
     "lugar": "Sala de Comunicaciones"
   }
 ];
+
 const METAS = [
   "Consolidar una directiva conectada, organizada y con seguimiento permanente de acuerdos.",
   "Fortalecer la participación activa, el compañerismo y la comunicación entre socios.",
   "Ejecutar proyectos de servicio con impacto real, medible y sostenible.",
   "Potenciar la imagen pública del Club Rotary Huaraz Colonial en canales oficiales.",
-  "Promover la formación rotaria, el liderazgo juvenil y la integración de nuevos socios."
+  "Promover la formación rotaria, el liderazgo juvenil y la integración de nuevos socios.",
+  "Implementar una gestión digital para reuniones, asistencia, publicaciones, comentarios y metas."
 ];
+
 const LINKS = {
   "web": "https://energeticos2023.github.io/CLUBROTARYHUARAZCOLONIAL/",
   "facebook": "https://www.facebook.com/profile.php?id=61578558107674",
