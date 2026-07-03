@@ -1,5 +1,1 @@
-# Club Rotary Huaraz Colonial APP actualizada
-
-Versión actualizada para mostrar fotos reales de directivos desde `assets/foto_*.jpg`.
-
-Subir todos los archivos a GitHub Pages reemplazando la versión anterior.
+APP Premium Club Rotary Huaraz Colonial. Esta versión no incluye fotos individuales para no sobrescribir las que ya subiste en assets/foto_*.jpg.

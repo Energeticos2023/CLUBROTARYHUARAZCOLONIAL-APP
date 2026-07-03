@@ -4,9 +4,8 @@
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#F3F7FE",
-  "theme_color": "#17458F",
-  "description": "Aplicación interna del Club Rotary Huaraz Colonial.",
+  "background_color": "#F4F8FF",
+  "theme_color": "#05265F",
   "icons": [
     {
       "src": "assets/icon-192.png",
