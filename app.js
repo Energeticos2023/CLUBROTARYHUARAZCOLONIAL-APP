@@ -8,7 +8,7 @@ const installBanner = document.getElementById("installBanner");
 const save = (k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const load = (k,f)=>{try{return JSON.parse(localStorage.getItem(k)) ?? f}catch{return f}};
 const wa = (n,msg)=>`https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
-const photoSrc = m => `assets/${m.foto}.jpg?v=10`;
+const photoSrc = m => `assets/${m.foto}.jpg?v=11`;
 
 window.addEventListener("beforeinstallprompt", e=>{e.preventDefault(); deferredPrompt=e; installBanner.classList.remove("hidden");});
 document.getElementById("installNow").onclick = async ()=>{if(deferredPrompt){deferredPrompt.prompt(); deferredPrompt=null; installBanner.classList.add("hidden")}else alert("Android/Chrome: menú ⋮ > Instalar app. iPhone/Safari: Compartir > Agregar a pantalla de inicio.");};
@@ -26,7 +26,19 @@ function home(){
   return `<section class="hero">
     <div class="hero-top"><div class="hero-time">9:41</div><div class="hero-bell">🔔</div></div>
     <div class="logo-card">
-      <img src="assets/logo_rotary_huaraz_colonial.png?v=10" alt="Club Rotary Huaraz Colonial">
+      <div class="logo-grid">
+        <div class="logo-side">
+          <img src="assets/logo_rotary_huaraz_colonial.png?v=11" alt="Club Rotary Huaraz Colonial">
+        </div>
+        <div class="president-card">
+          <div class="president-photo">
+            <img src="assets/foto_p.jpg?v=11" alt="José Rafael Zeña Peche" onerror="this.remove(); this.parentElement.textContent='Presidente'">
+          </div>
+          <p class="president-name">José Rafael Zeña Peche</p>
+          <p class="president-role">Presidente</p>
+          <p class="president-period">2026–2027</p>
+        </div>
+      </div>
       <div class="gold-wave"></div>
     </div>
     <h1>Club Rotary Huaraz Colonial</h1>
@@ -96,9 +108,9 @@ function guardarComentarioReunion(){ const t=document.getElementById('comentario
 function comunidadPage(){
   return `${head("Comunidad")}<section class="page">
     <div class="post-card">
-      <div class="post-head"><div class="avatar"><img src="assets/logo_rotary_huaraz_colonial.png?v=10" alt=""></div><div><h3>Club Rotary Huaraz Colonial</h3><p>Hoy · 10:30 a. m.</p></div></div>
+      <div class="post-head"><div class="avatar"><img src="assets/logo_rotary_huaraz_colonial.png?v=11" alt=""></div><div><h3>Club Rotary Huaraz Colonial</h3><p>Hoy · 10:30 a. m.</p></div></div>
       <p class="post-text"><strong>Unidos para transformar vidas</strong><br>Así vivimos nuestra jornada de servicio en beneficio de la comunidad de Huaraz.</p>
-      <img class="official-photo" src="assets/foto_oficial.jpg?v=10" alt="Foto oficial">
+      <img class="official-photo" src="assets/foto_oficial.jpg?v=11" alt="Foto oficial">
       <div class="reactions"><span>❤️ 24</span><span>💬 5 comentarios</span></div>
     </div>
     <h3 class="section-title">Accesos y conexiones</h3>
@@ -135,4 +147,4 @@ function metasPage(){
 function updateNav(){ navs.forEach(n=>n.classList.toggle('active', n.dataset.page===page || (page==='perfil'&&n.dataset.page==='directiva') || (['comentarios','metas'].includes(page)&&n.dataset.page==='comunidad'))); }
 function render(){ updateNav(); const pages={inicio:home,directiva:directivaPage,perfil:perfilPage,reuniones:reunionesPage,comunidad:comunidadPage,comentarios:comentariosPage,metas:metasPage}; app.innerHTML=(pages[page]||home)(); }
 render();
-if('serviceWorker' in navigator){ navigator.serviceWorker.register('./sw.js?v=10').catch(()=>{}); }
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('./sw.js?v=11').catch(()=>{}); }
