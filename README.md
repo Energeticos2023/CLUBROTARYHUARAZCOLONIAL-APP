@@ -1,17 +1,5 @@
-# Club Rotary Huaraz Colonial - APP PWA
+# Club Rotary Huaraz Colonial APP actualizada
 
-Aplicación web progresiva para socios del Club Rotary Huaraz Colonial.
+Versión actualizada para mostrar fotos reales de directivos desde `assets/foto_*.jpg`.
 
-## Incluye
-- Inicio con logo oficial
-- Directiva 2026-2027
-- Perfil de cargos
-- Reuniones programadas
-- Confirmación de asistencia local
-- Comentarios locales
-- Comunidad/Publicaciones
-- Enlaces: Web oficial, Facebook, TikTok, MyRotary y WhatsApp
-- Botón para instalar la app
-
-## Nota
-Esta versión guarda información localmente en el equipo del usuario. Para operación multiusuario real, conectar Firebase/Firestore.
+Subir todos los archivos a GitHub Pages reemplazando la versión anterior.

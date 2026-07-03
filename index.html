@@ -4,20 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17458F">
-  <meta name="description" content="Aplicación interna del Club Rotary Huaraz Colonial para socios, reuniones, publicaciones, comentarios y metas.">
   <title>Club Rotary Huaraz Colonial</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
-  <div id="installBanner" class="install-banner hidden"><div><strong>Instalar aplicación</strong><br><span>Agrega esta app a tu celular.</span></div><button id="installNow">Instalar</button><button id="closeBanner">×</button></div>
-  <div class="app-shell">
-    <header class="topbar"><button id="backBtn" class="icon-btn hidden">‹</button><div id="pageTitle" class="page-title-top">Club Rotary Huaraz Colonial</div><button id="notifyBtn" class="icon-btn">🔔</button></header>
-    <main id="app"></main>
-    <nav class="bottom-nav"><button data-page="inicio" class="nav-item active">🏠<span>Inicio</span></button><button data-page="directiva" class="nav-item">👥<span>Directiva</span></button><button data-page="reuniones" class="nav-item">📅<span>Reuniones</span></button><button data-page="comunidad" class="nav-item">☰<span>Más</span></button></nav>
+  <div id="installBanner" class="install-banner hidden">
+    <div><strong>Instalar aplicación</strong><br><span>Agrega esta app a tu celular.</span></div>
+    <button id="installNow">Instalar</button>
+    <button id="closeBanner">×</button>
   </div>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <div class="phone">
+    <header class="topbar">
+      <button id="backBtn" class="top-icon hidden">‹</button>
+      <div id="topTitle" class="top-title">Club Rotary Huaraz Colonial</div>
+      <button id="bellBtn" class="top-icon">🔔</button>
+    </header>
+    <main id="app" class="app"></main>
+    <nav class="bottom-nav">
+      <button data-page="inicio" class="nav active"><span>🏠</span>Inicio</button>
+      <button data-page="directiva" class="nav"><span>👥</span>Directiva</button>
+      <button data-page="reuniones" class="nav"><span>📅</span>Reuniones</button>
+      <button data-page="comunidad" class="nav"><span>☰</span>Más</button>
+    </nav>
+  </div>
+  <script src="data.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
