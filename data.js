@@ -248,5 +248,5 @@ const LINKS = {
   "facebook": "https://www.facebook.com/profile.php?id=61578558107674",
   "tiktok": "https://www.tiktok.com/@club.rotary.huara?is_from_webapp=1&sender_device=pc",
   "myrotary": "https://my.rotary.org/es",
-  "whatsapp": "https://wa.me/51942899919?text=Hola%20Club%20Rotary%20Huaraz%20Colonial"
+  "whatsapp": "https://chat.whatsapp.com/DtpeMTult0X6JcPpBwZZH7"
 };
