@@ -8,7 +8,7 @@ const installBanner = document.getElementById("installBanner");
 const save = (k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const load = (k,f)=>{try{return JSON.parse(localStorage.getItem(k)) ?? f}catch{return f}};
 const wa = (n,msg)=>`https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
-const photoSrc = (m)=>`assets/${m.foto}.jpg?v=14`;
+const photoSrc = (m)=>`assets/${m.foto}.jpg?v=15`;
 const ADMIN_PIN = "2027";
 function getReuniones(){
   const saved = load("reuniones_admin", null);
@@ -24,6 +24,10 @@ function formatFecha(r){
   const d = fechaHoraReunion(r);
   if(d) return d.toLocaleDateString("es-PE", {weekday:"long", day:"2-digit", month:"short"}) + " · " + r.hora24;
   return `${r.dia || ""} ${r.hora || ""}`.trim();
+}
+function requestNotifications(){
+  if(!("Notification" in window)){ alert("Este navegador no permite notificaciones."); return; }
+  Notification.requestPermission().then(()=>{ scheduleMeetingAlerts(); alert("Notificaciones revisadas. Si fueron aceptadas, la app podrá alertar antes de la reunión."); });
 }
 function scheduleMeetingAlerts(){
   if(!("Notification" in window) || Notification.permission !== "granted") return;
@@ -44,8 +48,6 @@ function scheduleMeetingAlerts(){
     });
   });
 }
-const photoSrc = m => `assets/${m.foto}.jpg?v=14`;
-
 window.addEventListener("beforeinstallprompt", e=>{e.preventDefault(); deferredPrompt=e; installBanner.classList.remove("hidden");});
 document.getElementById("installNow").onclick = async ()=>{if(deferredPrompt){deferredPrompt.prompt(); deferredPrompt=null; installBanner.classList.add("hidden")}else alert("Android/Chrome: menú ⋮ > Instalar app. iPhone/Safari: Compartir > Agregar a pantalla de inicio.");};
 document.getElementById("closeBanner").onclick = ()=>installBanner.classList.add("hidden");
@@ -64,12 +66,12 @@ function home(){
     <div class="logo-card">
       <div class="logo-grid">
         <div class="logo-side">
-          <img src="assets/logo_rotary_huaraz_colonial.png?v=14" alt="Club Rotary Huaraz Colonial">
+          <img src="assets/logo_rotary_huaraz_colonial.png?v=15" alt="Club Rotary Huaraz Colonial">
         </div>
         <div class="president-card">
           <div class="president-badge">Presidencia</div>
           <div class="president-photo">
-            <img src="assets/foto_p.jpg?v=14" alt="José Rafael Zeña Peche" onerror="this.remove(); this.parentElement.textContent='Presidente'">
+            <img src="assets/foto_p.jpg?v=15" alt="José Rafael Zeña Peche" onerror="this.remove(); this.parentElement.textContent='Presidente'">
           </div>
           <p class="president-name">José Rafael Zeña Peche</p>
           <p class="president-role">Presidente</p>
@@ -147,14 +149,16 @@ function guardarComentarioReunion(){ const t=document.getElementById('comentario
 function comunidadPage(){
   return `${head("Comunidad")}<section class="page">
     <div class="post-card">
-      <div class="post-head"><div class="avatar"><img src="assets/logo_rotary_huaraz_colonial.png?v=14" alt=""></div><div><h3>Club Rotary Huaraz Colonial</h3><p>Hoy · 10:30 a. m.</p></div></div>
+      <div class="post-head"><div class="avatar"><img src="assets/logo_rotary_huaraz_colonial.png?v=15" alt=""></div><div><h3>Club Rotary Huaraz Colonial</h3><p>Hoy · 10:30 a. m.</p></div></div>
       <p class="post-text"><strong>Unidos para transformar vidas</strong><br>Así vivimos nuestra jornada de servicio en beneficio de la comunidad de Huaraz.</p>
-      <img class="official-photo" src="assets/foto_oficial.jpg?v=14" alt="Foto oficial">
+      <img class="official-photo" src="assets/foto_oficial.jpg?v=15" alt="Foto oficial">
       <div class="reactions"><span>❤️ 24</span><span>💬 5 comentarios</span></div>
     </div>
     <h3 class="section-title">Accesos y conexiones</h3>
     <div class="list">
-      ${linkCard("👥","Lista de socios","Directiva y socios del club","javascript:go(\'socios\')")}\n      ${linkCard("⚙️","Administrar reuniones","Actualizar fecha, hora y lugar","javascript:go(\'admin\')")}\n      ${linkCard("⬇️","Instalar aplicación","Descarga la app en tu dispositivo","javascript:installApp()")}
+      ${linkCard("👥","Lista de socios","Directiva y socios del club","javascript:go('socios')")}
+      ${linkCard("⚙️","Administrar reuniones","Actualizar fecha, hora y lugar","javascript:go('admin')")}
+      ${linkCard("⬇️","Instalar aplicación","Descarga la app en tu dispositivo","javascript:installApp()")}
       ${linkCard("🌐","Web oficial","energeticos2023.github.io/CLUBROTARYHUARAZCOLONIAL",LINKS.web)}
       ${linkCard("f","Facebook","facebook.com/profile.php?id=61578558107674",LINKS.facebook)}
       ${linkCard("🎵","TikTok","@club.rotary.huara",LINKS.tiktok)}
@@ -258,4 +262,4 @@ function restaurarReuniones(){
 function updateNav(){ navs.forEach(n=>n.classList.toggle('active', n.dataset.page===page || (page==='perfil'&&n.dataset.page==='directiva') || (['comentarios','metas'].includes(page)&&n.dataset.page==='comunidad'))); }
 function render(){ updateNav(); const pages={inicio:home,directiva:directivaPage,perfil:perfilPage,reuniones:reunionesPage,comunidad:comunidadPage,comentarios:comentariosPage,metas:metasPage,socios:sociosPage,admin:adminPage}; app.innerHTML=(pages[page]||home)(); }
 render();
-if('serviceWorker' in navigator){ navigator.serviceWorker.register('./sw.js?v=14').catch(()=>{}); }
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('./sw.js?v=15').catch(()=>{}); }

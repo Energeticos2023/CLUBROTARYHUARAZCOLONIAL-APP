@@ -1,12 +1,11 @@
-# Club Rotary Huaraz Colonial APP - Admin Reuniones V14
+# Club Rotary Huaraz Colonial APP - Corrección V15
 
-Cambios:
-- El botón general de WhatsApp del club apunta al grupo de socios.
-- Se mantiene WhatsApp personal en cada perfil directivo.
-- Se agregó página “Socios”.
-- Se agregó panel “Administrar reuniones” con PIN inicial: 2027.
-- Se agregaron alertas locales: 60, 45, 30 y 15 minutos antes de reuniones que tengan fecha y hora.
-- Caché actualizada a v=14.
+Corrección realizada:
+- Se corrigió el error de JavaScript que dejaba la pantalla principal en blanco.
+- Se mantiene administración de reuniones con PIN 2027.
+- Se mantiene lista de socios.
+- Se mantiene WhatsApp grupal del club.
+- Se mantienen WhatsApp personales por directivo.
+- Caché actualizada a v=15.
 
-Importante:
-Esta versión permite actualizar reuniones en el dispositivo donde se usa. Para que el Presidente actualice una reunión y todos los socios la vean automáticamente en sus celulares, se requiere conectar la app a Firebase, Google Sheets o una base de datos en línea.
+Subir y reemplazar todos los archivos en GitHub. Abrir con ?v=15.
