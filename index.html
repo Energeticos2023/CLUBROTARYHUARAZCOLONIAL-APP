@@ -4,27 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#082D69">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Rotary Huaraz">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Club Rotary Huaraz Colonial</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="assets/icon-512.png">
+  <link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
   <div id="installBanner" class="install-banner hidden">
-    <div><strong>Instalar aplicación</strong><br><span>Agrega esta app a tu celular.</span></div>
+    <div><strong>Instalar aplicación</strong><br><span>Android: Chrome. iPhone: Safari.</span></div>
     <button id="installNow">Instalar</button>
     <button id="closeBanner">×</button>
   </div>
+
   <div class="phone">
     <main id="app" class="app"></main>
     <nav class="bottom-nav">
       <button data-page="inicio" class="nav active"><span>🏠</span>Inicio</button>
-      <button data-page="directiva" class="nav"><span>👥</span>Directiva</button>
       <button data-page="reuniones" class="nav"><span>📅</span>Reuniones</button>
+      <button data-page="cambio" class="nav"><span>🏅</span>Mazo</button>
       <button data-page="comunidad" class="nav"><span>☰</span>Más</button>
     </nav>
   </div>
-  <script src="data.js?v=15"></script>
-  <script src="app.js?v=15"></script>
+
+  <script src="data.js?v=21"></script>
+  <script src="app.js?v=21"></script>
 </body>
 </html>
