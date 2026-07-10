@@ -248,7 +248,7 @@ const DIRECTIVA = [
     "id": "lideres_jovenes",
     "item": 11,
     "cargo": "Contacto del club para los Programas para Líderes Jóvenes",
-    "nombre": "Leezzing Ghinneers Guimaray Gonzalez",
+    "nombre": "Jimmy Niels Davis Olivera Artola",
     "celular": "943751542",
     "foto": "foto_l",
     "resena": "Promueve la vinculación del club con jóvenes líderes, fortaleciendo programas de liderazgo, servicio, participación juvenil y conexión intergeneracional.",
