@@ -1,20 +1,15 @@
-# Club Rotary Huaraz Colonial APP - Funciones Directiva V21
+# Club Rotary Huaraz Colonial APP - Fiestas Patrias V22
 
-Esta versión complementa la aplicación V20, no elimina lo avanzado.
+Actualización complementaria, manteniendo lo avanzado en la aplicación.
 
-Se mantiene:
-- Socios completos con WhatsApp independiente.
-- Cumpleaños con alertas y mensajes preparados.
-- Cambio de Mazo y galería institucional.
-- Cronograma de reuniones con alerta visual.
-- Agenda de reunión.
-- WhatsApp grupal.
-- Instalación Android/iPhone.
-- Panel administrador de reuniones.
+Cambios V22:
+- Se activó modo Fiestas Patrias con iluminación visual rojo/blanco/dorado y azul Rotary.
+- Se agregó mensaje corto e institucional por los 205 años del Perú:
+  “¡Feliz aniversario, Perú! Servir con amor también es honrar a nuestra patria grande.”
+- Se insertó un botón visible de la aplicación YACUSOL:
+  https://energeticos2023.github.io/Yacusol-app/
+- Se mantiene: socios, cumpleaños, WhatsApp personal, WhatsApp grupal, Cambio de Mazo, cronograma, agenda, alertas e instalación Android/iPhone.
+- Caché actualizada a v22.
 
-Actualización V21:
-- Se ampliaron y fortalecieron las funciones de cada integrante de la Junta Directiva 2026-2027.
-- Se actualizaron reseñas, funciones y metas por cargo.
-- La sección Directiva ahora muestra responsabilidades más claras, formales y útiles para la gestión del club.
-
-Abrir con ?v=21 después de subir a GitHub.
+Abrir con:
+https://energeticos2023.github.io/CLUBROTARYHUARAZCOLONIAL-APP/?v=22

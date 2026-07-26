@@ -1,12 +1,12 @@
-const CACHE_NAME = "rotary-huaraz-v21";
+const CACHE_NAME = "rotary-huaraz-v22";
 const ASSETS = [
   "./",
-  "./index.html?v=21",
-  "./styles.css?v=21",
-  "./app.js?v=21",
-  "./data.js?v=21",
+  "./index.html?v=22",
+  "./styles.css?v=22",
+  "./app.js?v=22",
+  "./data.js?v=22",
   "./manifest.webmanifest",
-  "./assets/logo_rotary_huaraz_colonial.png?v=21",
+  "./assets/logo_rotary_huaraz_colonial.png?v=22",
   "./assets/icon-192.png",
   "./assets/icon-512.png"
 ];

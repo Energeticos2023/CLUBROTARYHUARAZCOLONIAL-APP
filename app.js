@@ -12,7 +12,7 @@ const load = (k, f) => { try { const v = localStorage.getItem(k); return v ? JSO
 
 const ADMIN_PIN = "2027";
 const wa = (n, msg) => `https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
-const photoSrc = (m) => `assets/${m.foto}.jpg?v=21`;
+const photoSrc = (m) => `assets/${m.foto}.jpg?v=22`;
 
 function isIOS(){ return /iphone|ipad|ipod/i.test(navigator.userAgent); }
 function isStandalone(){ return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true; }
@@ -98,7 +98,8 @@ document.getElementById("closeBanner").onclick = () => installBanner.classList.a
 
 function tile(icon, label, target, gold=false) {
   const alertClass = target === "reuniones" ? " meeting-alert" : "";
-  return `<button class="tile ${gold ? "gold-tile" : ""}${alertClass}" onclick="${target === "instalar" ? "installApp()" : `go('${target}')`}"><span class="ico">${icon}</span>${label}</button>`;
+  const action = target === "instalar" ? "installApp()" : (target === "yacusol" ? "window.open(LINKS.yacusol || 'https://energeticos2023.github.io/Yacusol-app/','_blank')" : `go('${target}')`);
+  return `<button class="tile ${gold ? "gold-tile" : ""}${alertClass}" onclick="${action}"><span class="ico">${icon}</span>${label}</button>`;
 }
 function head(title) {
   return `<section class="screen-head"><div class="screen-row"><button class="back" onclick="back()">‹</button><div class="screen-title">${title}</div><div style="width:38px"></div></div></section>`;
@@ -147,16 +148,34 @@ function scheduleBirthdayAlerts(){
   }
 }
 
+
+function fiestasPatriasCard(){
+  return `<section class="patria-card">
+    <div class="patria-flag"><span></span><span></span><span></span></div>
+    <div class="patria-copy">
+      <strong>🇵🇪 Fiestas Patrias · Perú 205 años</strong>
+      <p>¡Feliz aniversario, Perú! Servir con amor también es honrar a nuestra patria grande.</p>
+    </div>
+  </section>`;
+}
+function yacusolCard(){
+  return `<a class="yacusol-card" href="${LINKS.yacusol || 'https://energeticos2023.github.io/Yacusol-app/'}" target="_blank">
+    <div class="yacusol-sun">☀️</div>
+    <div><strong>YACUSOL</strong><span>Soluciones solares para agua caliente</span></div>
+    <button>Ingresar</button>
+  </a>`;
+}
+
 function home() {
   const prox = proximasReuniones()[0] || getReuniones()[0];
   return `<section class="hero">
     <div class="hero-top"><div class="hero-time">9:41</div><div class="hero-bell">🔔</div></div>
     <div class="logo-card">
       <div class="logo-grid">
-        <div class="logo-side"><img src="assets/logo_rotary_huaraz_colonial.png?v=21" alt="Club Rotary Huaraz Colonial"></div>
+        <div class="logo-side"><img src="assets/logo_rotary_huaraz_colonial.png?v=22" alt="Club Rotary Huaraz Colonial"></div>
         <div class="president-card">
           <div class="president-badge">Presidencia</div>
-          <div class="president-photo"><img src="assets/foto_p.jpg?v=21" alt="José Rafael Zeña Peche" onerror="this.remove(); this.parentElement.textContent='Presidente'"></div>
+          <div class="president-photo"><img src="assets/foto_p.jpg?v=22" alt="José Rafael Zeña Peche" onerror="this.remove(); this.parentElement.textContent='Presidente'"></div>
           <p class="president-name">José Rafael Zeña Peche</p>
           <p class="president-role">Presidente</p>
           <p class="president-period">Gestión 2026–2027</p>
@@ -166,6 +185,8 @@ function home() {
     <h1>Club Rotary Huaraz Colonial</h1>
     <p>Aplicación institucional <span class="gold">2026–2027</span></p>
   </section>
+  ${fiestasPatriasCard()}
+  ${yacusolCard()}
   <section class="next-card" onclick="go('reuniones')">
     <div class="urgent-icon">🔔</div>
     <div><strong>Atención: reuniones del club</strong><span>${prox ? `${prox.tipo} · ${formatFecha(prox)}` : "Revisa el cronograma institucional."}</span></div>
@@ -188,6 +209,7 @@ function home() {
     ${tile("🎂","Cumpleaños","cumpleanos")}
     ${tile("👥","Directiva","directiva")}
     ${tile("👤","Socios","socios")}
+    ${tile("☀️","YACUSOL","yacusol")}
     ${tile("⬇️","Instalar app","instalar")}
   </section>
   <h3 class="section-title">Accesos oficiales</h3>
@@ -196,6 +218,7 @@ function home() {
     <a class="small-link" href="${LINKS.facebook}" target="_blank"><span class="ico">f</span>Facebook</a>
     <a class="small-link" href="${LINKS.tiktok}" target="_blank"><span class="ico">🎵</span>TikTok</a>
     <a class="small-link" href="${LINKS.myrotary}" target="_blank"><span class="ico">⚙️</span>MyRotary</a>
+    <a class="small-link yacusol-mini" href="${LINKS.yacusol || 'https://energeticos2023.github.io/Yacusol-app/'}" target="_blank"><span class="ico">☀️</span>YACUSOL</a>
   </section>
   <a class="whatsapp" href="${LINKS.whatsapp}" target="_blank">🟢 WhatsApp del grupo de socios</a>`;
 }
@@ -249,12 +272,12 @@ function cambioPage() {
   const hero = CAMBIO_MAZO[0]?.src || "assets/foto_cambio_maza.jpg";
   return `${head("Cambio de Mazo")}
   <section class="page">
-    <div class="gallery-hero" style="background-image:url('${hero}?v=21')">
+    <div class="gallery-hero" style="background-image:url('${hero}?v=22')">
       <div class="copy"><h2>Cambio de Mazo y Primer Aniversario</h2><p>Club Rotary Huaraz Colonial · Año Rotario 2026–2027</p></div>
     </div>
     <div class="panel" style="margin:0 0 14px"><h3>Memoria institucional</h3><p>Galería especial de nuestra ceremonia de cambio de directiva, juramentación, integración de socios y momentos institucionales que fortalecen la vida rotaria del club.</p></div>
     <div class="gallery-grid">
-      ${CAMBIO_MAZO.map((f,i)=>`<div class="gallery-card" onclick="verFotoCambio(${i})"><img src="${f.src}?v=21" alt="${f.caption}"><p>${f.caption}</p></div>`).join("")}
+      ${CAMBIO_MAZO.map((f,i)=>`<div class="gallery-card" onclick="verFotoCambio(${i})"><img src="${f.src}?v=22" alt="${f.caption}"><p>${f.caption}</p></div>`).join("")}
     </div>
   </section>`;
 }
@@ -270,7 +293,7 @@ function sociosPage() {
   <div class="panel" style="margin:0 0 14px"><h3>Directorio de socios</h3><p>Lista integrada con WhatsApp independiente para comunicación personal con cada socio.</p></div>
   <div class="list">
   ${SOCIOS.map(s => `<div class="role-card">
-    <div class="mini-photo">${s.foto ? `<img src="assets/${s.foto}.jpg?v=21" alt="${s.nombre}" onerror="this.remove(); this.parentElement.textContent='👤'">` : "👤"}</div>
+    <div class="mini-photo">${s.foto ? `<img src="assets/${s.foto}.jpg?v=22" alt="${s.nombre}" onerror="this.remove(); this.parentElement.textContent='👤'">` : "👤"}</div>
     <div class="role"><p class="cargo">${s.cargo || "Socio"}</p><p class="nombre">${s.nombre}</p><p style="margin:6px 0 0;color:#66778E;font-size:12px">${s.profesion || ""}<br>${s.email || ""}<br>Cumple: ${s.cumpleTexto || ""}</p></div>
     <a class="btn green" style="min-height:42px;padding:0 8px;font-size:12px" href="${waSocio(s, "Hola " + s.nombre + ", soy socio del Club Rotary Huaraz Colonial.")}" target="_blank">WhatsApp</a>
   </div>`).join("")}</div></section>`;
@@ -285,7 +308,7 @@ function cumpleanosPage(){
     ${hoy.length ? `<div class="panel" style="margin:0 0 14px;background:linear-gradient(135deg,#fff7df,#ffffff);border:2px solid rgba(247,168,27,.75)"><h3>🎂 Cumpleaños de hoy</h3><p>${hoy.map(s=>s.nombre).join(", ")}</p></div>` : `<div class="panel" style="margin:0 0 14px"><h3>🎂 Cumpleaños de socios</h3><p>No hay cumpleaños registrados para hoy. Revisa los próximos cumpleaños.</p></div>`}
     <div class="list">
       ${proximos.map(s=>`<div class="role-card">
-        <div class="mini-photo">${s.foto ? `<img src="assets/${s.foto}.jpg?v=21" alt="${s.nombre}" onerror="this.remove(); this.parentElement.textContent='🎂'">` : "🎂"}</div>
+        <div class="mini-photo">${s.foto ? `<img src="assets/${s.foto}.jpg?v=22" alt="${s.nombre}" onerror="this.remove(); this.parentElement.textContent='🎂'">` : "🎂"}</div>
         <div class="role"><p class="cargo">${s.dias === 0 ? "Hoy" : "Faltan " + s.dias + " días"}</p><p class="nombre">${s.nombre}</p><p style="margin:6px 0 0;color:#66778E;font-size:12px">${s.cumpleTexto} · ${s.cargo || "Socio"}</p></div>
         <div style="display:flex;flex-direction:column;gap:6px">
           <a class="btn green" style="min-height:38px;padding:0 8px;font-size:11px" href="${waSocio(s, mensajeCumpleSocio(s))}" target="_blank">Felicitar</a>
@@ -330,6 +353,7 @@ function comunidadPage() {
   ${linkCard("📅","Cronograma","Reuniones virtuales y presenciales","javascript:go('reuniones')")}
   ${linkCard("📋","Agenda","Agenda propuesta de reunión","javascript:go('agenda')")}
   ${linkCard("⚙️","Administrar reuniones","Actualizar fecha, hora y lugar","javascript:go('admin')")}
+  ${linkCard("☀️","Aplicación YACUSOL","Agua caliente con energía solar",LINKS.yacusol || "https://energeticos2023.github.io/Yacusol-app/")}
   ${linkCard("⬇️","Instalar Android / iPhone","Instrucciones de instalación","javascript:installApp()")}
   ${linkCard("🌐","Web oficial","Memoria institucional",LINKS.web)}
   ${linkCard("f","Facebook","Página oficial",LINKS.facebook)}
@@ -346,4 +370,4 @@ function metasPage(){return `${head("Metas 2026–2027")}<section class="page"><
 function updateNav(){navs.forEach(n=>n.classList.toggle("active", n.dataset.page===page || (page==="perfil"&&n.dataset.page==="directiva") || (["agenda","comentarios","metas","socios","admin","directiva","cumpleanos"].includes(page)&&n.dataset.page==="comunidad")));}
 function render(){updateNav();const pages={inicio:home,directiva:directivaPage,perfil:perfilPage,reuniones:reunionesPage,comunidad:comunidadPage,comentarios:comentariosPage,metas:metasPage,socios:sociosPage,admin:adminPage,agenda:agendaPage,cambio:cambioPage,cumpleanos:cumpleanosPage}; app.innerHTML=(pages[page]||home)();}
 render(); scheduleMeetingAlerts(); scheduleBirthdayAlerts();
-if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js?v=21").catch(()=>{});}
+if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js?v=22").catch(()=>{});}

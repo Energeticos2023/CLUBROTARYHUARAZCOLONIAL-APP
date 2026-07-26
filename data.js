@@ -837,4 +837,5 @@ const LINKS = {
   "tiktok": "https://www.tiktok.com/@club.rotary.huara?is_from_webapp=1&sender_device=pc",
   "myrotary": "https://my.rotary.org/es",
   "whatsapp": "https://chat.whatsapp.com/DtpeMTult0X6JcPpBwZZH7"
-};
+,
+  "yacusol": "https://energeticos2023.github.io/Yacusol-app/"};

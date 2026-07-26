@@ -2,7 +2,7 @@
   "name": "Club Rotary Huaraz Colonial",
   "short_name": "Rotary Huaraz",
   "description": "Aplicación institucional del Club Rotary Huaraz Colonial.",
-  "start_url": "./index.html?v=21",
+  "start_url": "./index.html?v=22",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
